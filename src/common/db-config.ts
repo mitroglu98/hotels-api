@@ -3,7 +3,7 @@ import { ConnectionOptions } from "typeorm";
 const dbConfig: ConnectionOptions = {
     type: 'mysql',
     host: 'localhost', 
-    port: 80, 
+    port: 3000, 
     username: 'root', 
     password: 'root', 
     database: 'hoteli'

@@ -20,6 +20,7 @@ createConnection(dbConfig)
     console.log("Error while connecting to DB");
     console.log(err);
   })
+  
 
 const listener: any = app.listen(3000, () => {
   console.log('Server is listening at port 3000'); 
