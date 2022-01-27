@@ -10,7 +10,7 @@ import hotelRouter from './routing/hotel-routing';
 const app: Application = express(); 
 app.use(express.json());
 
-app.use(hotelRouter);
+app.use('/hotels',hotelRouter);
 
 createConnection(dbConfig)
   .then(connection => {
@@ -20,7 +20,7 @@ createConnection(dbConfig)
     console.log("Error while connecting to DB");
     console.log(err);
   })
-  
+
 
 const listener: any = app.listen(3000, () => {
   console.log('Server is listening at port 3000'); 
